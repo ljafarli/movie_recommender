@@ -52,3 +52,5 @@ This is a simple movie recommendation system built using Flask and the Surprise 
     ```
 
 7. Open a web browser and go to `http://192.168.0.104:5001/recommend/1`.
+8. <img width="1470" alt="Screenshot 2025-05-10 at 21 48 35" src="https://github.com/user-attachments/assets/81276694-eb5d-43f2-b2d5-bff2d4614a84" />
+

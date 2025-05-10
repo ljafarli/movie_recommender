@@ -51,4 +51,4 @@ This is a simple movie recommendation system built using Flask and the Surprise 
     python app.py
     ```
 
-7. Open a web browser and go to `http://127.0.0.1:5000/recommend/<user_id>`.
+7. Open a web browser and go to `http://192.168.0.104:5001/recommend/1`.

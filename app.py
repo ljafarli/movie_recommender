@@ -3,6 +3,7 @@ from flask import Flask, jsonify
 from surprise import SVD
 from surprise import Dataset
 from surprise import Reader
+from surprise.model_selection import train_test_split
 
 # Initialize the Flask app
 app = Flask(__name__)
@@ -22,7 +23,7 @@ model.fit(trainset)
 def recommend(user_id):
     try:
         # Here, we're predicting the rating of a movie for the given user
-        movie_id = 1  # For example, movie ID 1 (can be dynamic)
+        movie_id = 2  # For example, movie ID 1 (can be dynamic)
         prediction = model.predict(user_id, movie_id)
         return jsonify({
             'user_id': user_id,
@@ -37,4 +38,4 @@ def recommend(user_id):
 
 # Run the Flask app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', port=5001, debug=True)
